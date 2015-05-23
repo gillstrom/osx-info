@@ -1,6 +1,6 @@
 {
   "name": "osx-info",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Get information about your Mac",
   "license": "MIT",
   "repository": "gillstrom/osx-info",
