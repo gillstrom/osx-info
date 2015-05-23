@@ -8,6 +8,7 @@ module.exports = function (cb) {
 		throw new Error('Only OS X systems are supported');
 	}
 
+	var arr;
 	var cmd = 'system_profiler';
 	var args = [
 		'SPHardwareDataType'
@@ -19,7 +20,7 @@ module.exports = function (cb) {
 			return;
 		}
 
-		var arr = res.trim().split('\n');
+		arr = res.trim().split('\n');
 		arr = arr.splice(4, arr.length - 1);
 
 		var obj = {};
@@ -32,7 +33,7 @@ module.exports = function (cb) {
 			'Total Number of Cores': 'cores',
 			'L2 Cache (per Core)': 'l2',
 			'L3 Cache': 'l3',
-			'Memory': 'memory',
+			Memory: 'memory',
 			'Boot ROM Version': 'rom',
 			'SMC Version (system)': 'smc',
 			'Serial Number (system)': 'sn',
@@ -58,7 +59,7 @@ module.exports = function (cb) {
 					return;
 				}
 
-				if (res.root.hasOwnProperty('configCode')) {
+				if (res.root.configCode) {
 					obj.name = res.root.configCode[0];
 				}
 
