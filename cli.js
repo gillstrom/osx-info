@@ -3,10 +3,10 @@
 var meow = require('meow');
 var osxInfo = require('./');
 
-var cli = meow({
+meow({
 	help: [
 		'Usage',
-		' $ osx-info'
+		'  $ osx-info'
 	].join('\n')
 });
 

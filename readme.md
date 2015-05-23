@@ -17,7 +17,14 @@ var osxInfo = require('osx-info');
 
 osxInfo(function (err, res) {
 	console.log(res);
-	// => { name: 'MacBook Pro (Retina, 15-inch, Mid 2014)', identifier: 'MacBookPro11,3', core: 'Intel Core i7', ...
+	/*
+	{
+		name: 'MacBook Pro (Retina, 15-inch, Mid 2014)',
+		identifier: 'MacBookPro11,3',
+		core: 'Intel Core i7',
+		...
+	}
+	*/
 });
 ```
 
