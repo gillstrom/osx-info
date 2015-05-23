@@ -43,6 +43,11 @@ $ osx-info --help
 ```
 
 
+## Related
+
+* [osx-model](https://github.com/kevva/osx-model) - Get your Mac model
+
+
 ## License
 
 MIT © [Andreas Gillström](http://github.com/gillstrom)
