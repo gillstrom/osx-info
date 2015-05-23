@@ -1,0 +1,41 @@
+{
+  "name": "osx-info",
+  "version": "0.0.1",
+  "description": "Get information about your Mac",
+  "license": "MIT",
+  "repository": "gillstrom/osx-info",
+  "author": {
+    "name": "Andreas Gillström",
+    "email": "andreasgillstrom@gmail.com",
+    "url": "github.com/gillstrom"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "bin": "cli.js",
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "apple",
+    "app",
+    "cli",
+    "cli-app",
+    "info",
+    "mac",
+    "osx",
+    "os x"
+  ],
+  "dependencies": {
+    "got": "^3.2.0",
+    "meow": "^3.1.0",
+    "xml2js": "^0.4.8"
+  },
+  "devDependencies": {
+    "ava": "0.0.4"
+  }
+}
