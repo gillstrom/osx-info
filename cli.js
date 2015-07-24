@@ -7,7 +7,7 @@ meow({
 	help: [
 		'Usage',
 		'  $ osx-info'
-	].join('\n')
+	]
 });
 
 osxInfo(function (err, res) {
