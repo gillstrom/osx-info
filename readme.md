@@ -13,10 +13,10 @@ $ npm install --save osx-info
 ## Usage
 
 ```js
-var osxInfo = require('osx-info');
+const osxInfo = require('osx-info');
 
-osxInfo(function (err, res) {
-	console.log(res);
+osxInfo().then(data => {
+	console.log(data);
 	/*
 	{
 		name: 'MacBook Pro (Retina, 15-inch, Mid 2014)',

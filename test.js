@@ -2,11 +2,10 @@
 var test = require('ava');
 var osxInfo = require('./');
 
-test('info', function (t) {
-	t.plan(2);
+test(function (t) {
+	t.plan(1);
 
-	osxInfo(function (err, res) {
-		t.assert(!err, err);
-		t.assert(typeof res === 'object', res);
+	osxInfo().then(function (data) {
+		t.assert(typeof data === 'object', data);
 	});
 });

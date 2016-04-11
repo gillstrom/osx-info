@@ -10,7 +10,7 @@
     "url": "github.com/gillstrom"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "scripts": {
     "test": "node test.js"
@@ -30,8 +30,10 @@
     "os x"
   ],
   "dependencies": {
-    "got": "^3.2.0",
+    "execa": "^0.2.2",
+    "got": "^6.3.0",
     "meow": "^3.3.0",
+    "pify": "^2.3.0",
     "xml2js": "^0.4.8"
   },
   "devDependencies": {

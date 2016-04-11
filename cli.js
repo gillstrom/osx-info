@@ -1,20 +1,11 @@
 #!/usr/bin/env node
 'use strict';
-var meow = require('meow');
-var osxInfo = require('./');
+const meow = require('meow');
+const osxInfo = require('./');
 
-meow({
-	help: [
-		'Usage',
-		'  $ osx-info'
-	]
-});
+meow(`
+	Usage
+	  $ osx-info
+`);
 
-osxInfo(function (err, res) {
-	if (err) {
-		console.error(err.message);
-		process.exit(1);
-	}
-
-	console.log(res);
-});
+osxInfo().then(data => console.log(data));
