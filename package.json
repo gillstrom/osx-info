@@ -13,7 +13,7 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "node test.js"
+    "test": "ava"
   },
   "bin": "cli.js",
   "files": [
@@ -37,6 +37,6 @@
     "xml2js": "^0.4.8"
   },
   "devDependencies": {
-    "ava": "0.0.4"
+    "ava": "*"
   }
 }
