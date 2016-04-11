@@ -1,12 +1,4 @@
-'use strict';
-var test = require('ava');
-var osxInfo = require('./');
+import test from 'ava';
+import fn from './';
 
-test('info', function (t) {
-	t.plan(2);
-
-	osxInfo(function (err, res) {
-		t.assert(!err, err);
-		t.assert(typeof res === 'object', res);
-	});
-});
+test(async t => t.is(typeof await fn(), 'object'));
