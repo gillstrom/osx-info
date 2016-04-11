@@ -13,7 +13,7 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "ava"
+    "test": "xo && ava"
   },
   "bin": "cli.js",
   "files": [
@@ -37,6 +37,10 @@
     "xml2js": "^0.4.8"
   },
   "devDependencies": {
-    "ava": "*"
+    "ava": "*",
+    "xo": "*"
+  },
+  "xo": {
+    "esnext": true
   }
 }
