@@ -32,6 +32,7 @@
   "dependencies": {
     "execa": "^0.2.2",
     "got": "^6.3.0",
+    "left-pad": "^1.0.2",
     "meow": "^3.3.0",
     "pify": "^2.3.0",
     "xml2js": "^0.4.8"
