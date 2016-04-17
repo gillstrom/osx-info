@@ -40,6 +40,9 @@ $ osx-info --help
 
   Usage
     $ osx-info
+
+  Options
+    --json  Output the result as JSON
 ```
 
 
